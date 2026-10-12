@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.8)
+project(songwei_bringup)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY launch config rviz urdf DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/cloud_preprocessor.py DESTINATION lib/${PROJECT_NAME})
+ament_package()

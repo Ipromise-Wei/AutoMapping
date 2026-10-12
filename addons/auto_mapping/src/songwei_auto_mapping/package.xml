@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>songwei_auto_mapping</name>
+  <version>0.1.0</version>
+  <description>Optional frontier exploration adapter for Ranger Mini V3.</description>
+  <maintainer email="hzauaiot@example.com">hzauaiot</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>songwei_bringup</exec_depend>
+  <exec_depend>frontier_exploration_ros2</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>nav2_common</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>lifecycle_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

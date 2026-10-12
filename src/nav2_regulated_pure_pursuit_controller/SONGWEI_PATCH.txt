@@ -1,0 +1,14 @@
+Upstream: https://github.com/ros-navigation/navigation2
+Tag: 1.1.20
+Commit: a097086719c88f781aa59788eca29ac6ca5e56db
+Matches the installed ROS Humble Nav2 1.1.20 API/ABI.
+
+Local change: decide final goal rotation using the transformed path endpoint,
+instead of its lookahead point. A curved lattice path may have a distant
+lookahead even when the robot is already within the goal's XY tolerance.
+The original footprint collision check and angular limits still apply.
+
+Regression: logs/navigation_mock_test.py exercises /goal_pose on both an
+imported map and a newly built map, using the Ranger Mini V3 motion model.
+It checks final heading, bounded position excursion, collision rejection,
+speed limits, goal completion and cancellation. No physical CAN access.

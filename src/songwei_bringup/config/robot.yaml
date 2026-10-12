@@ -1,0 +1,18 @@
+# Installation values inherited from the existing songwei workspace; verify physically.
+can_device: can0
+lidar_xyz: [0.35, 0.0, 0.10]
+lidar_rpy: [0.0, 0.0, 0.0]
+# Ground assumed at z=-0.25 in base_link, as in the previous projection config.
+min_height: -0.20
+max_height: 1.0
+range_min: 0.30
+range_max: 12.0
+# Mask the rear 90 degrees where the existing sensor sees chassis returns.
+angle_min: -2.35619449
+angle_max: 2.35619449
+# ceil(span/increment) and round(span/increment)+1 must both equal 270.
+angle_increment: 0.017511664734
+scan_time: 0.10
+# Chassis half-envelope plus clearance, in instantaneous base_link coordinates.
+self_filter_x: 0.43
+self_filter_y: 0.32

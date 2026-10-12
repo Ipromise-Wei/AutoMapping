@@ -1,0 +1,5 @@
+Repository: https://github.com/mertgulerx/frontier_exploration_ros2
+Commit: 0d611801cfe152dbd5000cf0b1936783b8977bde
+Package version: 1.6.1
+License: Apache-2.0
+Upstream source unmodified; robot integration is in songwei_auto_mapping.

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Approximate visualization envelope; this is not a calibrated collision model. -->
+<robot name="ranger_mini_v3">
+  <link name="base_link">
+    <visual>
+      <geometry><box size="0.72 0.50 0.345"/></geometry>
+      <material name="chassis"><color rgba="0.30 0.35 0.40 0.8"/></material>
+    </visual>
+  </link>
+  <link name="livox_frame">
+    <visual>
+      <geometry><cylinder radius="0.032" length="0.060"/></geometry>
+      <material name="lidar"><color rgba="0.1 0.8 0.4 1"/></material>
+    </visual>
+  </link>
+  <joint name="lidar_mount" type="fixed">
+    <parent link="base_link"/><child link="livox_frame"/>
+    <origin xyz="0.35 0.0 0.10" rpy="0 0 0"/>
+  </joint>
+</robot>
